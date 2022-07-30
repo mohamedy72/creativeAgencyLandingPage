@@ -72,6 +72,9 @@ const GlobalStyles = createGlobalStyle`
     margin: 1.25rem auto;
   }
 
+  svg {
+    display: block;
+  }
 
 
   @media screen and (min-width: 32.5rem) {

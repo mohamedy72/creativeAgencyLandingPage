@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const ServiceCard = styled.section`
-  width: 16.25rem;
-  height: 16.875rem;
+export const ServiceCard = styled.div`
+  /* max-width: 16.25rem; */
+  /* height: 16.875rem; */
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -10,4 +10,6 @@ export const ServiceCard = styled.section`
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 30px;
+  padding: 3.125rem 5rem;
+  text-align: center;
 `;
