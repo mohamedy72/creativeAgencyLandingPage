@@ -54,7 +54,7 @@ const Aboutus = () => {
           </OutlinedButton>
         </div>
       </AboutContent>
-      <div>
+      <div className="img-container">
         <img src={aboutImg} alt="Office Meeting" />
       </div>
     </AboutStyles>

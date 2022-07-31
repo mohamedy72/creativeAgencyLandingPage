@@ -45,16 +45,17 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
-  ul {
+  ul {align-items: center;
     list-style: none;
   }
   img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     display: block;
   }
 
   section {
-    padding: 4rem;
+    padding-block: 4rem;
     margin-block-end: 9.375rem;
   }
 
@@ -76,6 +77,10 @@ const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
+  .img-container {
+    width: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (min-width: 32.5rem) {
     h1 {

@@ -29,7 +29,7 @@ const Hero = () => {
         </p>
         <PrimaryButton>Start Project</PrimaryButton>
       </div>
-      <div>
+      <div className="img-container">
         <picture>
           <source srcset={heroImgSmall} media="(max-width: 719px)" />
           <source srcset={heroImgBig} media="(min-width: 720px)" />

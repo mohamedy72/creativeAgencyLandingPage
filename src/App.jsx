@@ -1,5 +1,13 @@
 import { Container } from "./components/Container.styled";
-import { Header, Hero, Aboutus, Services } from "./pages";
+import {
+  Header,
+  Hero,
+  Aboutus,
+  Services,
+  Portfolio,
+  Testimonials,
+  Contactus,
+} from "./pages";
 import GlobalStyles from "./shared/GlobalStyles.styled";
 
 function App() {
@@ -12,6 +20,9 @@ function App() {
           <Hero />
           <Aboutus />
           <Services />
+          <Portfolio />
+          <Testimonials />
+          <Contactus />
         </main>
       </Container>
     </>
