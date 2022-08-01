@@ -7,14 +7,15 @@ import {
   Portfolio,
   Testimonials,
   Contactus,
+  Footer,
 } from "./pages";
 import GlobalStyles from "./shared/GlobalStyles.styled";
 
 function App() {
   return (
     <>
+      <GlobalStyles />
       <Container>
-        <GlobalStyles />
         <Header />
         <main>
           <Hero />
@@ -25,6 +26,7 @@ function App() {
           <Contactus />
         </main>
       </Container>
+      <Footer />
     </>
   );
 }

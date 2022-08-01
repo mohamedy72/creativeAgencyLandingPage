@@ -17,6 +17,7 @@ const ContactBackground = styled.div`
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+
   & .img-container:first-child,
   & .img-container:last-child {
     grid-column: 1 / 2;
@@ -24,32 +25,46 @@ const ContactBackground = styled.div`
   }
   & .img-container:last-child {
     position: relative;
-    left: 9.9375rem;
+    left: 9rem;
     top: -6rem;
     z-index: -2;
+  }
+
+  & .img-container > img {
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width: 45rem) {
+    & .img-container:last-child {
+      left: 19rem;
+    }
   }
 `;
 const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & p {
+    margin-block: 1.25rem;
+  }
 `;
 
 const Contactus = () => {
   return (
-    <ContactLayout>
+    <ContactLayout id="contact">
       <ContactBackground>
         <div className="img-container">
           <picture>
-            <source srcset={img1Small} media="(max-width: 719px)" />
-            <source srcset={img1Big} media="(min-width: 720px)" />
+            <source srcSet={img1Small} media="(max-width: 719px)" />
+            <source srcSet={img1Big} media="(min-width: 720px)" />
             <img src={img1Small} alt="people" />
           </picture>
         </div>
         <div className="img-container">
           <picture>
-            <source srcset={img2Small} media="(max-width: 729px)" />
-            <source srcset={img2Big} media="(min-width: 720px)" />
+            <source srcSet={img2Small} media="(max-width: 729px)" />
+            <source srcSet={img2Big} media="(min-width: 720px)" />
             <img src={img2Small} alt="people" />
           </picture>
         </div>

@@ -17,7 +17,9 @@ const AboutContent = styled.div`
   white-space: pre-wrap;
   & .btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
   }
 
   & .btns .outlined_about-btn {

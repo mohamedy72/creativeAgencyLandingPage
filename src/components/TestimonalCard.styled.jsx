@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const TestimonialCard = styled.div`
-  width: 23.75rem;
+  max-width: 23.75rem;
   height: 16.0625rem;
-  padding: 2.8125rem 2.5rem;
+  padding: 2.8125rem 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

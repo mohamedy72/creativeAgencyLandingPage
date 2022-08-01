@@ -15,9 +15,8 @@ const ServicesLayout = styled.section`
     height: 2.625rem;
     fill: var(--white);
   }
-
-  & h3 {
-    font-size: 1em;
+  & h2 {
+    margin-block-end: 2.1875rem;
   }
 `;
 const ServicesContent = styled.div`
@@ -39,13 +38,13 @@ const ServicesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.1875rem;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 `;
 
 const Services = () => {
   return (
-    <ServicesLayout>
+    <ServicesLayout id="services">
       <ServicesContent>
         <small>Our Services</small>
         <h2>Perfect and Fast Movement</h2>

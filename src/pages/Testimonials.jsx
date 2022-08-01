@@ -15,15 +15,18 @@ const TestimonialHead = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
+  & h2 {
+    margin-block-end: 2.1875rem;
+  }
 `;
 const Testimonial = styled.div``;
 
 const Testimonials = () => {
   return (
-    <TestimonialLayout>
+    <TestimonialLayout id="testmonial">
       <TestimonialHead>
         <small>Testimonial</small>
-        <h3>People Talk about us</h3>
+        <h2>People Talk about us</h2>
       </TestimonialHead>
       <Testimonial>
         {testimonials.map((testmo) => (

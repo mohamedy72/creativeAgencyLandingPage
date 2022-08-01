@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
     /* Color Variables */
     --primary: #377dff;
     --secondary: #1d1d1d;
+    --tertiary: #383638;
     --text: #464646;
 
     --white: #fff;
@@ -44,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
+    cursor: pointer;
   }
   ul {align-items: center;
     list-style: none;
@@ -55,20 +57,32 @@ const GlobalStyles = createGlobalStyle`
   }
 
   section {
-    padding-block: 4rem;
+    padding-block-end: 4rem;
     margin-block-end: 9.375rem;
   }
 
   h1 {
     max-width: 46.8125rem;
-    font-size: 1.75rem;
+    font-size: 1.75em;
     font-weight: 800;
    
   }
 
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1em;
+  }
+
+  h4 {
+    font-size: 1.125em;
+  }
+
   p {
-    max-width: 47.9375rem;
-    font-size: 0.875rem;
+    max-width: 57ch;
+    font-size: 0.875em;
     color: var(--text);
     margin: 1.25rem auto;
   }
@@ -80,20 +94,25 @@ const GlobalStyles = createGlobalStyle`
   .img-container {
     width: 100%;
     object-fit: cover;
+    overflow: hidden
   }
 
-  @media screen and (min-width: 32.5rem) {
+  @media screen and (min-width: 45rem) {
     h1 {
-      font-size: 2.1875rem;
+      font-size: 4em
     }
-  }
-  @media screen and (min-width: 720px) {
-    h1 {
-      font-size: 4rem
+    h2 {
+      font-size: 3.4375em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    h4 {
+      font-size: 1.375em;
     }
     p {
       width: 47.9375rem;
-      font-size: 1.25rem
+      font-size: 1.25em
     }
   }
 

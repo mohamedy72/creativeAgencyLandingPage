@@ -5,4 +5,15 @@ import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
 import Contactus from "./Contactus";
-export { Header, Hero, Aboutus, Services, Portfolio, Testimonials, Contactus };
+import Footer from "./Footer";
+
+export {
+  Header,
+  Hero,
+  Aboutus,
+  Services,
+  Portfolio,
+  Testimonials,
+  Contactus,
+  Footer,
+};

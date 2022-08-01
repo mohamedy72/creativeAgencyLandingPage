@@ -5,7 +5,7 @@ import heroImgBig from "/images/hero_bg_big.jpg";
 
 const HeroStyles = styled.section`
   display: flex;
-  gap: 3.125rem;
+  gap: 4rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,7 @@ const HeroStyles = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.25rem 0s;
   }
 `;
 
@@ -31,8 +32,8 @@ const Hero = () => {
       </div>
       <div className="img-container">
         <picture>
-          <source srcset={heroImgSmall} media="(max-width: 719px)" />
-          <source srcset={heroImgBig} media="(min-width: 720px)" />
+          <source srcSet={heroImgSmall} media="(max-width: 719px)" />
+          <source srcSet={heroImgBig} media="(min-width: 720px)" />
           <img
             src={heroImgSmall}
             alt="Hero image of people working and laughing"

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const ServiceCard = styled.div`
-  /* max-width: 16.25rem; */
-  /* height: 16.875rem; */
+  max-width: 18rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;

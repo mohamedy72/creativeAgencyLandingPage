@@ -11,6 +11,10 @@ const PortfolioLayout = styled.section`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  & h2 {
+    margin-block-end: 2.1875rem;
+  }
 `;
 const PortfolioContent = styled.div`
   display: flex;
@@ -26,24 +30,21 @@ const PortfolioWork = styled.div`
 
 const Portfolio = () => {
   return (
-    <PortfolioLayout>
+    <PortfolioLayout id="portfolio">
       <PortfolioContent>
         <small>Our Portfolio</small>
-        <h3>What do we do</h3>
+        <h2>What do we do</h2>
         <p>
           all projects that we have already done , proven can help to use more
           comfortable, then can used by client from our business
         </p>
       </PortfolioContent>
       <PortfolioWork>
-        {work.map((item) => {
-          console.log(item);
-          return (
-            <PortfolioCard key={item.id} img={item.img}>
-              <PortfolioCardLabel>{item.title}</PortfolioCardLabel>
-            </PortfolioCard>
-          );
-        })}
+        {work.map((item) => (
+          <PortfolioCard key={item.id} img={item.img}>
+            <PortfolioCardLabel>{item.title}</PortfolioCardLabel>
+          </PortfolioCard>
+        ))}
       </PortfolioWork>
       <OutlinedButton>See All Portfolio</OutlinedButton>
     </PortfolioLayout>
