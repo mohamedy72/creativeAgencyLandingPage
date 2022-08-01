@@ -1,32 +1,14 @@
-import styled from "styled-components";
-import { OutlinedButton } from "../components/Button.styled";
+import { OutlinedButton } from "../../components/Button.styled";
 import {
   PortfolioCard,
   PortfolioCardLabel,
-} from "../components/PortfolioCard.styled";
-import { work } from "../data/work";
-
-const PortfolioLayout = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  & h2 {
-    margin-block-end: 2.1875rem;
-  }
-`;
-const PortfolioContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-const PortfolioWork = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 3.375rem 0;
-  margin-block: 2.1875rem;
-`;
+} from "../../components/PortfolioCard.styled";
+import {
+  PortfolioContent,
+  PortfolioLayout,
+  PortfolioWork,
+} from "./Portfolio.styled";
+import { work } from "../../data/work";
 
 const Portfolio = () => {
   return (

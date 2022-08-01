@@ -1,25 +1,14 @@
-import styled from "styled-components";
+import { testimonials } from "../../data/testimonals";
 import {
   TestimonialCard,
   TestimonialHeader,
   TestimonialQuote,
-} from "../components/TestimonalCard.styled";
-import { testimonials } from "../data/testimonals";
-const TestimonialLayout = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-const TestimonialHead = styled.header`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  & h2 {
-    margin-block-end: 2.1875rem;
-  }
-`;
-const Testimonial = styled.div``;
+} from "../../components/TestimonalCard.styled";
+import {
+  Testimonial,
+  TestimonialHead,
+  TestimonialLayout,
+} from "./Testimonials.styled";
 
 const Testimonials = () => {
   return (

@@ -1,11 +1,11 @@
-import Aboutus from "./Aboutus";
-import Header from "./Header";
-import Hero from "./Hero";
-import Services from "./Services";
-import Portfolio from "./Portfolio";
-import Testimonials from "./Testimonials";
-import Contactus from "./Contactus";
-import Footer from "./Footer";
+import Aboutus from "./Aboutus/Aboutus";
+import Header from "./Header/Header";
+import Hero from "./Hero/Hero";
+import Services from "./Services/Services";
+import Portfolio from "./Portfolio/Portfolio";
+import Testimonials from "./Testimonials/Testimonials";
+import Contactus from "./Contactus/Contactus";
+import Footer from "./Footer/Footer";
 
 export {
   Header,

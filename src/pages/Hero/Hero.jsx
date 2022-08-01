@@ -1,24 +1,7 @@
-import styled from "styled-components";
-import { PrimaryButton } from "../components/Button.styled";
+import { PrimaryButton } from "../../components/Button.styled";
+import { HeroStyles } from "./Hero.styled";
 import heroImgSmall from "/images/hero_bg.jpg";
 import heroImgBig from "/images/hero_bg_big.jpg";
-
-const HeroStyles = styled.section`
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  & div:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem 0s;
-  }
-`;
-
 const Hero = () => {
   return (
     <HeroStyles id="home">
