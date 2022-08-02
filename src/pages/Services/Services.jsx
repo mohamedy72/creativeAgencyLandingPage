@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <ServicesLayout id="services">
       <ServicesContent>
-        <small>Our Services</small>
+        <small className="section_intro-title">Our Services</small>
         <h2>Perfect and Fast Movement</h2>
         <p>
           We move with make a Creative Strategy for help your business goal, we

@@ -18,6 +18,13 @@ export const PortfolioContent = styled.div`
 export const PortfolioWork = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3.375rem 0;
-  margin-block: 2.1875rem;
+  gap: 3rem;
+  margin-block: 4rem;
+
+  @media screen and (min-width: 64rem) {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex: 1;
+  }
 `;

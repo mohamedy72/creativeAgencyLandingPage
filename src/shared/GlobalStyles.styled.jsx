@@ -81,10 +81,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    max-width: 57ch;
+    width: min(50ch, 90%, 60ch);
     font-size: 0.875em;
     color: var(--text);
-    margin: 1.25rem auto;
   }
 
   svg {
@@ -111,10 +110,20 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1.375em;
     }
     p {
-      width: 47.9375rem;
       font-size: 1.25em
     }
   }
+
+
+  // Utility Classes
+  .section_intro-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block-end: 1.25rem
+  }
+
+
 
 `;
 

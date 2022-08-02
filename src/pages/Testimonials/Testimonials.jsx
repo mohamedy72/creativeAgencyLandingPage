@@ -14,7 +14,7 @@ const Testimonials = () => {
   return (
     <TestimonialLayout id="testmonial">
       <TestimonialHead>
-        <small>Testimonial</small>
+        <small className="section_intro-title">Testimonial</small>
         <h2>People Talk about us</h2>
       </TestimonialHead>
       <Testimonial>

@@ -8,6 +8,10 @@ export const HeroStyles = styled.section`
   align-items: center;
   text-align: center;
 
+  & p {
+    margin-block: 1.5625rem;
+  }
+
   & div:first-child {
     display: flex;
     flex-direction: column;

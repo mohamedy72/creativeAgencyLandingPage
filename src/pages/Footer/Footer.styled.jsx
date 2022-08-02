@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterBody = styled.footer`
   background-color: var(--tertiary);
-  padding: 2.8125rem 1.5625rem;
+  padding: 8.25rem 1.5625rem 2.0625rem;
   & > div > div {
     width: 100%;
   }
@@ -22,13 +22,26 @@ export const FooterLinks = styled.div`
   & > ul > li {
     margin-block-end: 1.3rem;
   }
+  @media screen and (min-width: 45rem) and (max-width: 63rem) {
+    & > ul {
+      flex: 1;
+    }
+  }
+  @media screen and (min-width: 64rem) {
+    & > ul {
+      flex: 1;
+    }
+  }
 `;
 export const FooterSocials = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.25rem 0;
-  text-align: center;
 
+  & hr {
+    width: 100%;
+  }
   & .icons {
     display: flex;
     justify-content: center;
@@ -44,5 +57,6 @@ export const FooterSocials = styled.div`
     font-weight: 300;
     color: var(--white);
     margin: 0;
+    text-align: center;
   }
 `;

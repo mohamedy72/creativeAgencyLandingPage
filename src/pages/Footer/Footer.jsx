@@ -14,11 +14,11 @@ const Footer = () => {
         <Logo inFooter />
         {footer.map((item) => (
           <ul key={item.id}>
-            <li>
+            <li key={item.title}>
               <FooterItemTitle>{item.title}</FooterItemTitle>
             </li>
             {item.body.map((link) => (
-              <li>
+              <li key={link}>
                 <FooterItemLink>{link}</FooterItemLink>
               </li>
             ))}

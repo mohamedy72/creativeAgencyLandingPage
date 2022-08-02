@@ -14,7 +14,7 @@ const Portfolio = () => {
   return (
     <PortfolioLayout id="portfolio">
       <PortfolioContent>
-        <small>Our Portfolio</small>
+        <small className="section_intro-title">Our Portfolio</small>
         <h2>What do we do</h2>
         <p>
           all projects that we have already done , proven can help to use more

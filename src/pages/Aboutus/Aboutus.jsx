@@ -7,7 +7,7 @@ const Aboutus = () => {
   return (
     <AboutStyles id="about">
       <AboutHeader>
-        <small>About Us</small>
+        <small className="section_intro-title">About Us</small>
         <h2>Our Teammate</h2>
       </AboutHeader>
       <AboutContent>
