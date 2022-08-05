@@ -10,6 +10,12 @@ export const TestimonialCard = styled.div`
   gap: 2.1875rem 0;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
+
+  @media (prefers-color-scheme: dark) {
+    background: #0b0f15;
+    box-shadow: 0px 8px 24px rgba(163, 163, 163, 0.05);
+    border-radius: 20px;
+  }
 `;
 export const TestimonialHeader = styled.header`
   display: flex;
@@ -37,9 +43,22 @@ export const TestimonialHeader = styled.header`
       font-size: 0.6875em;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    & .name {
+      color: var(--text-light);
+      & .role {
+        color: var(--text-light);
+      }
+    }
+  }
 `;
 export const TestimonialQuote = styled.blockquote`
   font-size: 0.875em;
   opacity: 0.8;
   color: var(--text);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--text-light);
+  }
 `;
