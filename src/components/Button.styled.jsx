@@ -24,9 +24,19 @@ export const PrimaryButton = styled(Button)`
   background-color: var(--primary);
   color: var(--white);
   box-shadow: var(--btn-box-shadow);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--dark);
+    background-color: var(--text-light);
+  }
 `;
 
 export const OutlinedButton = styled(Button)`
   border: 0.7px solid var(--primary);
   color: var(--primary);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--text-light);
+    color: var(--text-light);
+  }
 `;

@@ -6,10 +6,6 @@ const NavStyles = styled.nav`
     gap: 2rem;
     align-items: center;
     justify-content: center;
-
-    & a {
-      color: var(--secondary);
-    }
   }
 
   &.mobile-nav {

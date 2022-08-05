@@ -9,6 +9,11 @@ export const ServiceCard = styled.div`
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 30px;
-  padding: 3.125rem 5rem;
+  padding: 3rem 5rem;
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--dark);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 `;

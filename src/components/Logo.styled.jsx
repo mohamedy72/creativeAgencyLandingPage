@@ -37,6 +37,10 @@ const LogoContainer = styled.div`
       font-size: 0.7em;
     }
   }
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--dark);
+    color: var(--text-light);
+  }
 `;
 
 const Logo = ({ inFooter }) => {

@@ -9,6 +9,8 @@ export const ContactLayout = styled.section`
 
   @media screen and (min-width: 64rem) {
     flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 3rem;
     text-align: left;
     justify-content: flex-start;
   }
@@ -16,20 +18,21 @@ export const ContactLayout = styled.section`
 
 export const ContactBackground = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2s, 1fr);
   justify-content: center;
   align-items: center;
   margin-block-end: 2.8125rem;
 
   & .img-container:first-child,
   & .img-container:last-child {
+    justify-self: flex-end;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
   & .img-container:last-child {
     position: relative;
-    left: 9rem;
-    top: -6rem;
+    left: .5rem;
+    top: -5rem;
     z-index: -2;
   }
 
@@ -39,16 +42,20 @@ export const ContactBackground = styled.div`
 
   @media screen and (min-width: 45rem) and (max-width: 63rem) {
     & .img-container:last-child {
-      left: 18rem;
+      left: 3rem;
       top: -7rem;
     }
+  }
+
+  @media screen and (min-width: 64rem) {
+    margin-block-end: 0;
   }
 
   @media screen and (min-width: 90rem) {
     width: 80%;
     flex-basis: 80%;
     & .img-container:last-child {
-      left: 19rem;
+      left: 5rem;
     }
   }
 `;

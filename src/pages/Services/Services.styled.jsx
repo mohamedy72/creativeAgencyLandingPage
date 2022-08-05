@@ -65,6 +65,7 @@ export const ServicesContent = styled.div`
 export const ServicesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: 2.1875rem;
   justify-items: center;
   align-items: center;

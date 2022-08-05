@@ -7,12 +7,13 @@ const GlobalStyles = createGlobalStyle`
     --secondary: #1d1d1d;
     --tertiary: #383638;
     --text: #464646;
+    --text-light: #E2E2E2;
 
     --white: #fff;
+    --dark: #0E0E0E;
 
     /* Effects */
     --btn-box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
-    --card-box-shadow: ;
 
     /* Gradients */
     --portfolio-grad:  linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
@@ -36,16 +37,32 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background-color: var(--white);
+    color: var(--white);
     font-family: Nunito, sans-serif;
     font-weight: 300;
     font-size: 1rem;
     scroll-behavior: smooth;
-    overflow-x: hidden
+    overflow-x: hidden;
+
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--dark);
+      
+      & > * {
+        color: var(--white)
+      }
+    }
   }
 
   a {
     text-decoration: none;
     cursor: pointer;
+    color: var(--text);
+
+    @media (prefers-color-scheme: dark)  {
+      color: var(--text-light)
+    }
   }
   ul {align-items: center;
     list-style: none;
@@ -84,6 +101,11 @@ const GlobalStyles = createGlobalStyle`
     width: min(50ch, 90%, 60ch);
     font-size: 0.875em;
     color: var(--text);
+    
+    @media (prefers-color-scheme: dark)  {
+      color: var(--text-light);
+      opacity: 0.6;
+    }
   }
 
   svg {
@@ -93,7 +115,11 @@ const GlobalStyles = createGlobalStyle`
   .img-container {
     width: 100%;
     object-fit: cover;
-    overflow: hidden
+    overflow: hidden;
+
+    & img {
+      border-radius: 12px
+    }
   }
 
   @media screen and (min-width: 45rem) {
@@ -119,12 +145,16 @@ const GlobalStyles = createGlobalStyle`
   .section_intro-title {
     color: var(--primary);
     font-size: 1.5rem;
-    font-weight: 600;
-    margin-block-end: 1.25rem
+    font-weight: 600;    
   }
 
 
+  @media (prefers-color-scheme: dark) {
+    .section_intro-title {
+      color: var(--text-light)
 
+    }
+  }
 `;
 
 export default GlobalStyles;
